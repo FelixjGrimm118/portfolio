@@ -1,4 +1,7 @@
 const nextConfig = {
+  output: 'export',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   experimental: {
     optimizePackageImports: ['@/components/ui'],
   },
