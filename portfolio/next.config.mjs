@@ -1,25 +1,24 @@
-const nextConfig = {
+// next.config.ts
+import type { NextConfig } from 'next'
+
+const isProd = process.env.NODE_ENV === 'production'
+const repo = 'portfolio' 
+
+const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
-  experimental: {
-    optimizePackageImports: ['@/components/ui'],
-  },
-images: {
+  basePath: isProd ? `/${repo}` : undefined,
+  assetPrefix: isProd ? `/${repo}/` : undefined,
+  trailingSlash: true,
+
+  images: {
     unoptimized: true,
   },
+
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  images: {
-    unoptimized: true, // Disable default image optimization
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
 }
 
 export default nextConfig
