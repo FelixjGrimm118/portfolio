@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="text-center max-w-2xl mx-auto">
         <div className="mb-8">
           <Image
-            src="/portfolio-website/headshot.jpeg"
+            src="/portfolio/headshot.jpeg"
             alt="Profile"
             className={`w-40 h-40 rounded-full mx-auto mb-8 border-4 border-accent/20 object-cover transition-all duration-1000 ease-out ${
               isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
