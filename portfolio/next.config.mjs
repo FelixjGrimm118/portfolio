@@ -1,4 +1,3 @@
-// next.config.ts
 import type { NextConfig } from 'next'
 
 const isProd = process.env.NODE_ENV === 'production'
@@ -10,9 +9,7 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? `/${repo}/` : undefined,
   trailingSlash: true,
 
-  images: {
-    unoptimized: true,
-  },
+  images: { unoptimized: true },
 
   compress: true,
   poweredByHeader: false,
