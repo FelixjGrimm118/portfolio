@@ -1,7 +1,7 @@
 const nextConfig = {
   output: 'export',
-  basePath: '/portfolio-website',
-  assetPrefix: '/portfolio-website/',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   experimental: {
     optimizePackageImports: ['@/components/ui'],
   },
