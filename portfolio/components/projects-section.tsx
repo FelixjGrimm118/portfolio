@@ -12,18 +12,18 @@ const projects = [
     description:
       "I built BirdSense, a bird-feeder camera that spots and identifies birds and their species in real time. It runs YOLO for detection and a PyTorch ViT for classification I trained, (\~92% on 200+ species), piping results through AWS (Lambda, S3, MongoDB) to a web app to display the results.",
     image: "/home-page.png",
-    technologies: ["Python", "Next.js", "MongoDB", "AWS", "PyTorch", "YOLO", "TypeScript"],
+    technologies: ["Python", "Next.js", "MongoDB", "AWS", "PyTorch", "YOLO", "TypeScript", "machine learning", "computer vision", "React", "web development", "Rest API", "transformers"],
     githubUrl: "https://github.com/FelixjGrimm118/BirdSense",
     liveUrl: "https://birdsense.vercel.app/",
   },
   {
-    title: "Task Management App",
+    title: "Marble Mayhem",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/task-management-app.png",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      "My and a friend built a tilt-controlled marble maze game on a FRDM board, we read the onboard accelerometer over I²C and stream state via UART. On the PC side, we created a Python GUI that procedurally generates mazes through recursive backtracking and simulates 2-D physics of the marble.",
+    image: "/marble-mayhem.png",
+    technologies: ["C", "Embedded programming", "Python", "IMU sensors", "I²C", "UART", "Real-time/interrupt-driven firmware", "microcontrollers", "serial communication"],
+    githubUrl: "https://github.com/FelixjGrimm118/Marble-Mayhem",
+    liveUrl: "https://youtu.be/zWesUXPY7sg",
   },
   {
     title: "Weather Dashboard",
@@ -33,15 +33,6 @@ const projects = [
     technologies: ["JavaScript", "Chart.js", "OpenWeather API"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-  },
-  {
-    title: "Machine Learning Classifier",
-    description:
-      "A machine learning project that classifies images using TensorFlow. Includes data preprocessing, model training, and a web interface for predictions.",
-    image: "/machine-learning-interface.png",
-    technologies: ["Python", "TensorFlow", "Flask", "scikit-learn"],
-    githubUrl: "https://github.com",
-    liveUrl: null,
   },
 ]
 
@@ -56,10 +47,7 @@ export function ProjectsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-6">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Here are some of the projects I've worked on that showcase my skills and passion for development.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-6">Projects</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
