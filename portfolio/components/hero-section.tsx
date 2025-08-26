@@ -29,7 +29,7 @@ export function HeroSection() {
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Hey I'm <span className="text-accent">Felix</span>!
+            Hey I&apos;m <span className="text-accent">Felix</span>!
           </h1>
         </div>
 

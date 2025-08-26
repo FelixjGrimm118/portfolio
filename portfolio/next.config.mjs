@@ -1,4 +1,7 @@
 const nextConfig = {
+  output: 'export',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   experimental: {
     optimizePackageImports: ['@/components/ui'],
   },
@@ -11,6 +14,9 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
