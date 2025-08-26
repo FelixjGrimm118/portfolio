@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 
 export function HeroSection() {
@@ -17,7 +18,7 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-background">
       <div className="text-center max-w-2xl mx-auto">
         <div className="mb-8">
-          <img
+          <Image
             src="/headshot.jpeg"
             alt="Profile"
             className={`w-40 h-40 rounded-full mx-auto mb-8 border-4 border-accent/20 object-cover transition-all duration-1000 ease-out ${

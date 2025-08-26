@@ -1,15 +1,14 @@
 const nextConfig = {
   output: 'export',
-  basePath: '/portfolio',
-  assetPrefix: '/portfolio/',
+  basePath: '/portfolio-website',
+  assetPrefix: '/portfolio-website/',
   experimental: {
     optimizePackageImports: ['@/components/ui'],
   },
-  images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    unoptimized: true, // Added unoptimized option
+images: {
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
   compress: true,
   poweredByHeader: false,

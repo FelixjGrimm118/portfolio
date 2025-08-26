@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import Image from "next/image"
 
 const projects = [
   {
@@ -60,7 +61,7 @@ export function ProjectsSection() {
               style={{ transitionDelay: `${300 + index * 150}ms` }}
             >
               <div className="aspect-video overflow-hidden">
-                <img
+                <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
