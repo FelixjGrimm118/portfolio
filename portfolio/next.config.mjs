@@ -1,9 +1,9 @@
-import type { NextConfig } from 'next'
 
 const isProd = process.env.NODE_ENV === 'production'
 const repo = 'portfolio' 
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const config = {
   output: 'export',
   basePath: isProd ? `/${repo}` : undefined,
   assetPrefix: isProd ? `/${repo}/` : undefined,
@@ -18,4 +18,4 @@ const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
 }
 
-export default nextConfig
+export default config
