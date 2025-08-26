@@ -12,7 +12,7 @@ const projects = [
     description:
       "I built BirdSense, a bird-feeder camera that spots and identifies birds and their species in real time. It runs YOLO for detection and a PyTorch ViT for classification I trained, (\~92% on 200+ species), piping results through AWS (Lambda, S3, MongoDB) to a web app to display the results.",
     image: "/home-page.png",
-    technologies: ["Python", "Next.js", "MongoDB", "AWS", "PyTorch", "YOLO", "TypeScript", "machine learning", "computer vision", "React", "web development", "Rest API", "transformers"],
+    technologies: ["Python", "Next.js", "MongoDB", "AWS", "PyTorch", "YOLO", "TypeScript", "machine learning", "computer vision", "React", "web development", "REST API", "transformers"],
     githubUrl: "https://github.com/FelixjGrimm118/BirdSense",
     liveUrl: "https://birdsense.vercel.app/",
   },
@@ -26,13 +26,13 @@ const projects = [
     liveUrl: "https://youtu.be/zWesUXPY7sg",
   },
   {
-    title: "Weather Dashboard",
+    title: "Lost at Cornell",
     description:
-      "A responsive weather dashboard that displays current conditions and forecasts using external APIs. Features location-based weather and interactive charts.",
-    image: "/weather-dashboard-interface.png",
-    technologies: ["JavaScript", "Chart.js", "OpenWeather API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      " I built a RESTful API backend for a swift IOS client for a lost and found app for the Cornell University Community. deployed onto google cloud VM using Docker and Flask. ",
+    image: "/lost-Cornell.png",
+    technologies: ["Python", "Docker", "Flask", "REST API", "SQL", "Google Cloud", "backend development","unit testing"],
+    githubUrl: "https://github.com/FelixjGrimm118/backend--Lost-at-Cornell",
+    liveUrl: "https://youtube.com/shorts/L-FY_Z3aT5c?feature=share",
   },
 ]
 
