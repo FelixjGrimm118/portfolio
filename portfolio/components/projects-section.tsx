@@ -14,7 +14,7 @@ const projects = [
       "I built BirdSense, a bird-feeder camera that spots and identifies birds and their species in real time. It runs YOLO for detection and a PyTorch ViT for classification I trained, (\~92% on 200+ species), piping results through AWS (Lambda, S3, MongoDB) to a web app to display the results.",
     image: "/portfolio/home-page.png",
     technologies: ["Python", "Next.js", "MongoDB", "AWS", "PyTorch", "YOLO", "TypeScript", "machine learning", "computer vision", "React", "web development", "REST API", "transformers"],
-    githubUrl: "https://github.com/FelixjGrimm118/BirdSense",
+    githubUrl: "https://github.com/fjg188/BirdSense",
     liveUrl: "https://birdsense.vercel.app/",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
       "My and a friend built a tilt-controlled marble maze game on a FRDM board, we read the onboard accelerometer over I²C and stream state via UART. On the PC side, we created a Python GUI that procedurally generates mazes through recursive backtracking and simulates 2-D physics of the marble.",
     image: "/portfolio/marble-mayhem.png",
     technologies: ["C", "Embedded programming", "Python", "IMU sensors", "I²C", "UART", "Real-time/interrupt-driven firmware", "microcontrollers", "serial communication"],
-    githubUrl: "https://github.com/FelixjGrimm118/Marble-Mayhem",
+    githubUrl: "https://github.com/fjg188/Marble-Mayhem",
     liveUrl: "https://youtu.be/zWesUXPY7sg",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
       " I built a RESTful API backend for a swift IOS client for a lost and found app for the Cornell University Community. deployed onto google cloud VM using Docker and Flask. ",
     image: "/portfolio/lost-Cornell.png",
     technologies: ["Python", "Docker", "Flask", "REST API", "SQL", "Google Cloud", "backend development","unit testing"],
-    githubUrl: "https://github.com/FelixjGrimm118/backend--Lost-at-Cornell",
+    githubUrl: "https://github.com/fjg188/backend--Lost-at-Cornell",
     liveUrl: "https://youtube.com/shorts/L-FY_Z3aT5c?feature=share",
   },
 ]

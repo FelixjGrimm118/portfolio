@@ -58,7 +58,7 @@ export function HeroSection() {
             className="border-muted-foreground/30 text-muted-foreground hover:text-primary hover:border-accent bg-transparent hover:scale-105 transition-all duration-200"
           >
             <Github className="mr-2 h-4 w-4" />
-            <Link href="https://github.com/FelixjGrimm118"
+            <Link href="https://github.com/fjg188"
             target="_blank"
             rel="noopener noreferrer" 
             passHref>
